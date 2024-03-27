@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+        <!-- font-family: "Nanum Pen Script", cursive;
+         font-family: "Poppins", sans-serif;
+         font-family: "Vast Shadow", serif; 
+         -->
+
+<head>
+
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;
+    0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/18a8a8ac4d.js" crossorigin="anonymous"></script>
+
+<!-- link to animate folder in my Kings Project Folder -->
+<link rel="stylesheet" href="animate/animate.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- .... master JQUERY script ....-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- Smooth scroll animated anchor links code -->
+   <script>
+       $(document).ready(function() {
+           $('a[href^="#"]').on('click', function(e) {
+               e.preventDefault();
+               var target = this.hash,
+                   $target = $(target);
+               $('html, body').stop().animate({
+                   'scrollTop': $target.offset().top
+               }, 900, 'swing', function() {
+                   window.location.hash = target;
+               });
+           });
+       });
+   </script>
+   <!-- link to animation effects -->
+   <script src="animate/wow.min.js"></script>
+   <script>
+       new WOW().init();
+   </script> 
+
+<style>
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+box-sizing: border-box;
+}
+
+    header {
+        background-color:#FDF8E8;
+        background-size: cover;
+        padding: 200px 100px;
+        }
+
+        h1{
+            font-family: "Poppins", sans-serif;
+            color:#36722C;
+            font-size: 70px;
+            font-weight:900;
+            text-shadow: rgba(0, 0, 0, 0.13) 4px 5px 3px; 
+            padding-bottom: 50px; 
+        }
+
+
+    header a {
+            font-family: "Nanum Pen Script", cursive;
+            background-color: #E6630B;
+            font-style:normal;
+            padding: 10px 15px 10px 15px;
+            color: white;
+            font-weight: 400;
+            font-size: 28px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        header a:hover {
+            background-color:#24C4E4;
+            color: white;
+        }
+    
+    #meetfounder {
+            background-color:#24C4E4;
+            padding: 100px 50px 100px 50px;
+            background-size: cover;
+            display: flex;
+            text-align: center;
+        }
+
+    #meetfounder img {
+        
+        box-shadow: 5px 5px 15px 5px;
+        flex-wrap: wrap;
+        color:black;
+        
+    }
+
+    .founder
+    {
+        margin-right:100px;
+        margin-left: 100px;
+    }
+
+
+
+    #meetfounder h2 {
+            color:white;
+            stroke: #FA9F30;
+            text-align: left;
+            
+    }
+
+    #meetfounder p {
+            line-height: 32px;
+            color: black;
+            width:800px;
+            font-weight: bold;
+            text-align: left;
+            font-size: 32px;
+        }
+       
+
+    nav {
+            background-color:#FDF8E8;
+            position: fixed;
+            padding: 10px 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            align-items: center;
+            border-bottom: none;
+            /*z-index:10;*/
+        }
+    nav a {
+            color: black;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    nav a:hover {
+            color:#EB487B;
+        }
+
+    nav .links a {
+            font-size: 20px;
+            padding-right: 20px;
+            text-align: left;
+        } 
+    #brandtitle h4 {
+            text-align: center;
+            font-family: "Vast Shadow", serif;
+    }
+
+    footer {
+            background-image: url(images/meetfoundersectionimage.jpg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            padding: 20px 50px 20px 50px;
+            color:white;
+        }
+
+    footer a:hover {
+            color:#36722C;
+        }
+
+    footer div a {
+            color:#ffffff;
+            font-size: 30px;
+            padding-right: 5px;
+            padding-top: 10px;
+            margin-right: 10px;
+        }
+    footer div a:hover {
+            color: #36722C;
+        }
+
+    #ourvalues {
+        background-color:#FDF8E8;
+        background-size: cover;
+        overflow: hidden;
+        text-align: center;
+        padding: 100px 0;
+        }
+
+
+        #ourvalues div {
+            justify-content: center;
+            display:contents;
+            flex-wrap:wrap;
+            padding: 50px;
+        }
+        
+
+        #ourvalues h2 {
+            color: black;
+            text-shadow: none;
+            margin-bottom: 30px;
+            text-shadow: rgba(0, 0, 0, 0.185) 6px 6px 10px;
+            font-size: 36px;
+            
+        }
+
+    #mission {
+            background-color:#36722C;
+            justify-content: right;
+            padding: 100px;
+            display:flex;
+            flex-wrap: wrap;
+            
+        }
+
+        
+   /* #mission div {
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    */
+
+    .missionphoto
+    {
+        margin-right:50px;
+        margin-left: 50px;
+       
+    }
+
+    #mission p {
+            font-size: 24px;
+            line-height: 35px;
+            color:#FDF8E8;
+            font-weight: 300;
+            font-family: "Poppins", sans-serif;
+        }
+    #mission h1 {
+            color:#E293AC;
+    }
+    #mission article {
+            
+            margin: 10px;
+            text-align: left;
+        }
+    #mission h3 {
+            color:white;
+            margin: 13px 0;
+            font-size: 36px;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+    nav a {
+        color:black;
+        text-decoration: none;
+    }
+    nav a:hover {
+        color:#24C4E4;
+    }
+
+            
+</style>
+</head>
+
+<body id="#brandtitle">
+    <nav>
+    
+        <div class="links">
+            <a href="#mission">Mission</a>
+            <a href="#meetfounder">Founder</a>
+            <a href="#values">Values</a>
+        </div>
+
+    <h4>The King's Project</h4>
+
+        
+    </nav>
+ 
+<header> 
+        
+    <h1>ENABLING AND<br>
+        EMPOWERING<br>
+        YOUTH<br>
+        THROUGH LITERACY</h1>
+    
+    <a href="#">Donate Today</a>
+    
+</header>
+
+<section id="mission">
+
+    <div class="missionphoto">
+        <img src="images/missionimage.png" alt="Nigeria Landscape"
+    
+
+        <article>  
+        <h3>MISSION</h3>
+        <br>
+        <h1>TO ALLEVIATE POVERTY<br>
+            THROUGH BUILDING A<br>
+            CULTURE OF STUDY &<br>
+            LEARNING
+        </h1>
+        <br>
+            <p> To be an education sanctuary that is a vital resource<br>
+                center that educates, informs, enriches, empowers <br>
+                and entertains Umuezeama Community, and the<br>
+                neighboring communities.
+            </p>
+        </article>
+
+</section>
+
+<section id="meetfounder">
+    <div>
+      <img src="Images/founder.png"Founder section";
+
+    </div>
+</section>
+
+<section id="ourvalues">
+    <div>
+        <h2>VALUES</h2>
+            <img src="images/value1.png" alt="Free & Equal Access to Information">
+            
+            <img src="images/value2.png" alt="Well-trained on Ground Staff">
+           
+            <img src="images/value3.png" alt="Mass Youth Literacy Campaign"> <br>
+            <br>
+            <br>
+            <img src="images/value4.png" alt="Responsible Stewardship">
+            
+            <img src="images/value5.png" alt="Teamwork & Partnership">
+    </div>
+</section>
+
+
+<footer>
+    <div><a href="#"><i class="fa-brands fa-facebook"></i></a> <a href="#"><i class="fa-brands fa-square-instagram"></i>
+    </a> <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div> 
+        
+    <p>&copy;2023 The King's Project <a 
+        href="mailto:kennokpara@gmail.com">kennokpara@gmail.com</a>
+    </p> 
+</footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+
+</html>
